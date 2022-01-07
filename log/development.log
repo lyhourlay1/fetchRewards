@@ -46,3 +46,865 @@ Migrating to CreateUsers (20220107033033)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-01-06 19:55:57 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 87ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2022-01-06 19:56:24 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/" for ::1 at 2022-01-06 19:59:21 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/" for ::1 at 2022-01-06 20:01:34 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users" for ::1 at 2022-01-06 20:02:03 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"demo"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.2.6) lib/action_controller/metal/request_forgery_protection.rb:215:in `handle_unverified_request'
+actionpack (5.2.6) lib/action_controller/metal/request_forgery_protection.rb:247:in `handle_unverified_request'
+actionpack (5.2.6) lib/action_controller/metal/request_forgery_protection.rb:242:in `verify_authenticity_token'
+activesupport (5.2.6) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.6) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.6) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.6) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.6) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.6) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2022-01-06 20:03:27 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"demo"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/user" for ::1 at 2022-01-06 20:05:07 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/user"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2022-01-06 20:05:13 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"demo"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "demo"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "demo"], ["created_at", "2022-01-07 04:05:50.008740"], ["updated_at", "2022-01-07 04:05:50.008740"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users?username=%22demo%22" for ::1 at 2022-01-06 20:06:44 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"\"demo\""}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/users?username=%22demo%22" for ::1 at 2022-01-06 20:07:03 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"\"demo\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/users?username=%22demo1%22" for ::1 at 2022-01-06 20:07:06 -0800
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"\"demo1\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/users?:username=%22demo1%22" for ::1 at 2022-01-06 20:08:57 -0800
+Processing by UsersController#create as */*
+  Parameters: {":username"=>"\"demo1\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/users?user[username]=%22demo1%22" for ::1 at 2022-01-06 20:09:06 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"\"demo1\""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "\"demo1\""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "\"demo1\""], ["created_at", "2022-01-07 04:09:06.569223"], ["updated_at", "2022-01-07 04:09:06.569223"]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "\"demo1\""], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template users/saved!, application/saved! with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/lyhourlay/Desktop/fetchRewards/app/views"
+):
+  
+app/controllers/users_controller.rb:6:in `create'
+Started POST "/users?user[username]=%22demo1%22" for ::1 at 2022-01-06 20:09:26 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"\"demo1\""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "\"demo1\""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "\"demo1\""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 401 Unauthorized in 42ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users?user[username]=%22demo2%22" for ::1 at 2022-01-06 20:09:36 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"\"demo2\""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "\"demo2\""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "\"demo2\""], ["created_at", "2022-01-07 04:09:36.207402"], ["updated_at", "2022-01-07 04:09:36.207402"]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "\"demo2\""], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 114ms (ActiveRecord: 1.1ms)
+
+
+Started POST "/users?user[username]=%22demo3%22" for ::1 at 2022-01-06 20:10:13 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"\"demo3\""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "\"demo3\""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "\"demo3\""], ["created_at", "2022-01-07 04:10:13.176194"], ["updated_at", "2022-01-07 04:10:13.176194"]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "\"demo3\""], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:29:25 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/transactions"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:30:13 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/1/transactions"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:30:25 -0800
+  
+SyntaxError (/Users/lyhourlay/Desktop/fetchRewards/app/controllers/transactions_controller.rb:14: syntax error, unexpected ']', expecting ')'
+...action).permit(:payer, :points])
+...                              ^):
+  
+app/controllers/transactions_controller.rb:14: syntax error, unexpected ']', expecting ')'
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:30:42 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/lyhourlay/Desktop/fetchRewards/app/models/transaction.rb:2: syntax error, unexpected ':', expecting keyword_end
+...tes :points, :payer, :presence:true
+...                              ^):
+  
+app/models/transaction.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/transactions_controller.rb:4:in `create'
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:32:50 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/transactions_controller.rb:5:in `create'
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:33:06 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/transactions_controller.rb:8:in `create'
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:33:18 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+Completed 401 Unauthorized in 8ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users/1/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:35:47 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"1"}
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+Completed 401 Unauthorized in 15ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/2/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:35:55 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users/2/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 20:48:06 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:5
+Completed 401 Unauthorized in 30ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-01-06 20:55:59 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddColumn (20220107050124)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "transactions" ADD "user_id" varchar NOT NULL[0m
+  ↳ db/migrate/20220107050124_add_column.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220107050124"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/users/2/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 21:04:41 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mTransaction Create (0.6ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["payer", "lee"], ["points", 100], ["created_at", "2022-01-07 05:04:41.791860"], ["updated_at", "2022-01-07 05:04:41.791860"], ["user_id", "2"]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/users/2/transactions?transaction[payer]=lee&transaction[points]=100" for ::1 at 2022-01-06 21:14:27 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"lee", "points"=>"100"}, "user_id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mTransaction Create (0.3ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["payer", "lee"], ["points", 100], ["created_at", "2022-01-07 05:14:27.858297"], ["updated_at", "2022-01-07 05:14:27.858297"], ["user_id", "2"]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:14:44 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+No template found for TransactionsController#index, rendering head :no_content
+Completed 204 No Content in 110ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:19:13 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (0.3ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (19.9ms)
+Completed 200 OK in 74ms (Views: 42.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:20:45 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (9.8ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:21:37 -0800
+  
+SyntaxError (/Users/lyhourlay/Desktop/fetchRewards/app/controllers/transactions_controller.rb:14: syntax error, unexpected ':', expecting ')'
+...= Transaction.find_by(:user_id: params[:user_id])
+...                              ^
+/Users/lyhourlay/Desktop/fetchRewards/app/controllers/transactions_controller.rb:14: syntax error, unexpected ')', expecting keyword_end
+..._by(:user_id: params[:user_id])
+...                              ^):
+  
+app/controllers/transactions_controller.rb:14: syntax error, unexpected ':', expecting ')'
+app/controllers/transactions_controller.rb:14: syntax error, unexpected ')', expecting keyword_end
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:22:46 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:14
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (25.3ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for #<Transaction:0x00007fd8331d7b68>):
+    1: @transactions.each_with_index do |transaction, index|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283269988120'
+app/controllers/transactions_controller.rb:15:in `index'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:23:15 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:14
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (0.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/lyhourlay/Desktop/fetchRewards/app/views/transactions/index.json.jbuilder:1: syntax error, unexpected keyword_do, expecting keyword_end
+...ate.new(self); @transactions do |transaction|
+...                             ^~
+/Users/lyhourlay/Desktop/fetchRewards/app/views/transactions/index.json.jbuilder:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  json.set! transaction.id do
+            ^~~~~~~~~~~
+/Users/lyhourlay/Desktop/fetchRewards/app/views/transactions/index.json.jbuilder:7: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/transactions/index.json.jbuilder:1: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/transactions/index.json.jbuilder:2: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/transactions/index.json.jbuilder:7: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/controllers/transactions_controller.rb:15:in `index'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:24:17 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:14
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (21.7ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Transaction:0x00007fd833135318>):
+    1: @transactions.each do |transaction|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283270293820'
+app/controllers/transactions_controller.rb:15:in `index'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:25:22 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (0.3ms)
+Completed 200 OK in 41ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:25:28 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (18.4ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: @transactions.each do |transaction|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283264568740'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:26:03 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (20.8ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    1: @transactions.each_with_index do |transaction, index|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283273763840'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:26:05 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (19.7ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    1: @transactions.each_with_index do |transaction, index|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283247820220'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:26:22 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (0.2ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions"[0m
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (6.0ms)
+Completed 200 OK in 47ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:26:36 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (0.2ms)
+Completed 200 OK in 41ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:26:52 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:14
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (23.3ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for #<Transaction:0x00007fd8332e7b20>):
+    1: @transactions.each_with_index do |transaction, index|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder___2784318331064148747_70283274170180'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:27:36 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Transaction Load (0.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Transaction Load (0.0ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mTransaction Load (0.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:32:30 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.4ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:15
+  Rendering transactions/index.json.jbuilder
+  Rendered transactions/index.json.jbuilder (24.2ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for #<Transaction:0x00007fd2d1591f40>):
+    1: @transactions.each_with_index do |transaction, index|
+    2:   json.set! transaction.id do
+    3:     json.extract! transaction, :payer, :points
+    4:   end
+  
+app/views/transactions/index.json.jbuilder:1:in `_app_views_transactions_index_json_jbuilder__3067006159757224328_70271703825400'
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:33:08 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? LIMIT ?[0m  [["user_id", "2"], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mTransaction Load (0.2ms)[0m  [1m[34mSELECT  "transactions".* FROM "transactions" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/transactions_controller.rb:15
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:35:42 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+Started GET "/users/2/transactions" for ::1 at 2022-01-06 21:36:12 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lyhourlay/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"2"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ?[0m  [["user_id", "2"]]
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (6.0ms)
+Completed 200 OK in 57ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+

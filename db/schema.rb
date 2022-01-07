@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_07_033033) do
+ActiveRecord::Schema.define(version: 2022_01_07_050124) do
 
   create_table "transactions", force: :cascade do |t|
     t.string "payer", null: false
     t.integer "points", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "user_id", null: false
     t.index ["payer"], name: "index_transactions_on_payer"
   end
 
