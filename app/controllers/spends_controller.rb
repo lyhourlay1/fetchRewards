@@ -5,7 +5,6 @@ class SpendsController < ApplicationController
         @spend.user_id = params[:user_id]
         if @spend.save
             makeTransactions(@spend.points, params[:user_id])
-            render json: "spend completed"
         else
             render json: @spend.errors.full_messages, status: 401
         end
@@ -16,6 +15,30 @@ class SpendsController < ApplicationController
     end
 
     def makeTransactions(points, user_id)
-        transactions = Transaction.where(user_id: user_id)
+        transactions = Transaction.where(user_id: user_id, redeemed: false).order(timestamp: :ASC)
+        i=0
+        hashTransactions=Hash.new(0)
+        while(points > 0)
+            pointsToRemove = transactions[i].remainder || transactions[i].points 
+                if (pointsToRemove <= points)
+                    hashTransactions[transactions[i].payer]+= pointsToRemove
+                    
+                    points -= pointsToRemove
+                    transactions[i].update(:redeemed=> true)
+                else 
+                    hashTransactions[transactions[i].payer]+= points
+                    transactions[i].update(:remainder => pointsToRemove - points)
+                    points = 0
+                end
+            i+=1;
+        end
+        hashTransactions.each do |key, value|
+            @transaction = Transaction.create(:points => (-1*value), :user_id=> user_id, :payer=>key, :redeemed=> true)
+            if @transaction.save
+            else
+                render json: @transaction.errors.full_messages, status: 401
+            end
+        end
+        render json: "transaction completed"
     end
 end

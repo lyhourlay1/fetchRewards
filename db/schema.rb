@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_08_011416) do
+ActiveRecord::Schema.define(version: 2022_01_08_054335) do
 
   create_table "spends", force: :cascade do |t|
     t.integer "points", null: false
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 2022_01_08_011416) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "user_id", null: false
+    t.boolean "redeemed", null: false
+    t.integer "remainder"
+    t.date "timestamp"
     t.index ["payer"], name: "index_transactions_on_payer"
   end
 

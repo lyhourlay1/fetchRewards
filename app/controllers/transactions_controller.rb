@@ -15,7 +15,7 @@ class TransactionsController < ApplicationController
     end
 
     def transaction_params
-        params.require(:transaction).permit(:payer, :points)
+        params.require(:transaction).permit(:payer, :points, :timestamp, :redeemed, :remainder)
     end
 
 end

@@ -1,5 +1,7 @@
 class Transaction < ApplicationRecord
-    validates :points, :payer, presence:true
+    validates :points, :payer ,presence:true
+    validates :redeemed, inclusion: {in: [true, false]}
+
 
     belongs_to :user, 
         primary_key: :id,
