@@ -1,3 +1,10 @@
 # README
-## Backend Framework: Ruby on Rails 
+## Backend Framework: Ruby on Rails
+## Testing Tool: Postman
 ## Routes: 
+* users: [create, show]
+* *create: create a user account. Ex. 
+* *show: show the 
+* transactions: []
+* spends
+
