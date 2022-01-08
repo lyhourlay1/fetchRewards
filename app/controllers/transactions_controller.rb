@@ -11,12 +11,11 @@ class TransactionsController < ApplicationController
     end
 
     def index
-        # debugger
         @transactions = Transaction.where(user_id: params[:user_id])
-        
     end
 
     def transaction_params
         params.require(:transaction).permit(:payer, :points)
     end
+
 end

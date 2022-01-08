@@ -4,4 +4,10 @@ class User < ApplicationRecord
         primary_key: :id,
         foreign_key: :user_id,
         class_name: :Transaction
+    
+    
+    has_many :spends,
+        primary_key: :id,
+        foreign_key: :user_id,
+        class_name: :Spend
 end
