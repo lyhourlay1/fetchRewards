@@ -3,7 +3,7 @@
 ## Testing Tool: Postman
 ## Routes: 
 * users: [create, show]
-* *create: create a user account. Ex. 
+  *create: create a user account. Ex. 
 * *show: show the 
 * transactions: []
 * spends
