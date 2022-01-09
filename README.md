@@ -33,7 +33,7 @@ I have seeded a demo user and 5 given transactions from the prompt. Make sure to
     * to see the balance, call show user
       * ![Screenshot](./app/assets/images/balance.png)
 
-## installation instruction
-* Install any code editor(VS Code)
-* Install Ruby Version 
-* Install Postman for testing purpose(can also use rails c to test)
+## Installation Instruction
+* Install any code editor([VS Code](https://code.visualstudio.com))
+* Install [Postman] (https://www.postman.com/downloads/) for testing purpose(can also use rails c to test)
+* Full ruby/rails documentation on setting up env [Here](https://docs.google.com/document/d/1o6WpeYmk1FZfbmGIQaVEI0ihhBJOj6n5cukmlv4ilGg/edit?usp=sharing)
