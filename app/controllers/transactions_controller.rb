@@ -1,5 +1,5 @@
 class TransactionsController < ApplicationController
-
+    #post request to create a transaction http call
     def create 
         @transaction = Transaction.create(transaction_params)
         @transaction.user_id = params[:user_id]
@@ -10,10 +10,12 @@ class TransactionsController < ApplicationController
         end
     end
 
+    #get reqeust to list all the transactions 
     def index
         @transactions = Transaction.where(user_id: params[:user_id])
     end
 
+    #transaction_params permit the param when making http request
     def transaction_params
         params.require(:transaction).permit(:payer, :points, :timestamp, :redeemed, :remainder)
     end

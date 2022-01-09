@@ -1,5 +1,5 @@
 class SpendsController < ApplicationController
-
+    #post request to create a spend http call which will also make Transactions if spend is saved
     def create 
         @spend = Spend.create(spend_params)
         @spend.user_id = params[:user_id]
@@ -10,6 +10,7 @@ class SpendsController < ApplicationController
         end
     end
 
+    #spend_params permit the param when making http request
     def spend_params
         params.require(:spend).permit(:points)
     end
