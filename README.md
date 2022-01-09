@@ -12,14 +12,26 @@ I have seeded a demo user and 5 given transactions from the prompt. Make sure to
 
 ## Routes: 
 * users: [create, show]
-  * create: create a user account.
-  ![Screenshot](./app/assets/images/create_user.png)
-  * show: show the balance of that specific user 
+  * create: POST HTTP request to create a user account.
+    * ![Screenshot](./app/assets/images/create_user.png)
+  * show: GET HTTP request to show the balance of that specific user  
+    * ![Screenshot](./app/assets/images/balance.png)
+
 * transactions: [create, index]
-  * create: create a transaction with specified payer, timestamp, and points 
-  * index: list all the transactions that were made
+  * create: POST HTTP request to create a transaction with specified payer, timestamp, and points 
+    * ![Screenshot](./app/assets/images/create_transaction.png)
+
+  * index: GET HTTP request to list all the transactions that were made
+    * ![Screenshot](./app/assets/images/index.png)
+
 * spends: [create ]
-  * create: create a spend which will generate what kind of transactions will be made redeem from the previous transactions. Rule: The spend is applied to the oldest to newest transactions. 
+  * create: POST HTTP request to create a spend which will generate what kind of transactions will be made redeem from the previous transactions. Rule: The spend is applied to the oldest to newest transactions.
+    * Spend is called 
+      * ![Screenshot](./app/assets/images/spend.png)
+    * Transactions of the corresponding amount and payer based of the timestamp were created
+      * ![Screenshot](./app/assets/images/final_transaction.png)
+    * to see the balance, call show user
+      * ![Screenshot](./app/assets/images/balance.png)
 
 ## installation instruction
 * Install any code editor(VS Code)

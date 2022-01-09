@@ -5984,3 +5984,311 @@ Processing by UsersController#create as */*
 Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.5ms)
 
 
+Started POST "/users/1/transactions?transaction[payer]=DANNON&transaction[timestamp]=2020-11-02T14:00:00Z&transaction[points]=1000&transaction[redeemed]=false" for ::1 at 2022-01-08 15:58:03 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"transaction"=>{"payer"=>"DANNON", "timestamp"=>"2020-11-02T14:00:00Z", "points"=>"1000", "redeemed"=>"false"}, "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/transactions_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[36mTransaction Create (2.0ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "DANNON"], ["points", 1000], ["created_at", "2022-01-08 23:58:03.970480"], ["updated_at", "2022-01-08 23:58:03.970480"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-11-02"]]
+  ↳ app/controllers/transactions_controller.rb:6
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/transactions_controller.rb:6
+Completed 200 OK in 81ms (Views: 0.5ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "spends"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "spends" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "points" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "payer" varchar NOT NULL, "points" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" varchar NOT NULL, "redeemed" boolean NOT NULL, "remainder" integer, "timestamp" date)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_payer" ON "transactions" ("payer")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_users_on_username" ON "users" ("username")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "spends"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "spends" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "points" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "transactions"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "transactions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "payer" varchar NOT NULL, "points" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "user_id" varchar NOT NULL, "redeemed" boolean NOT NULL, "remainder" integer, "timestamp" date)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_transactions_on_payer" ON "transactions" ("payer")[0m
+  ↳ db/schema.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_users_on_username" ON "users" ("username")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2022-01-08 23:58:53.475898"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-01-08 23:58:53.478437"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "demo"], ["created_at", "2022-01-08 23:58:53.497859"], ["updated_at", "2022-01-08 23:58:53.497859"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mTransaction Create (0.2ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "DANNON"], ["points", 1000], ["created_at", "2022-01-08 23:58:53.512956"], ["updated_at", "2022-01-08 23:58:53.512956"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-11-02"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mTransaction Create (0.3ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "UNILEVER"], ["points", 200], ["created_at", "2022-01-08 23:58:53.515062"], ["updated_at", "2022-01-08 23:58:53.515062"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-10-31"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mTransaction Create (0.2ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "DANNON"], ["points", -200], ["created_at", "2022-01-08 23:58:53.517034"], ["updated_at", "2022-01-08 23:58:53.517034"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-10-31"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mTransaction Create (0.2ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "MILLER COORS"], ["points", 10000], ["created_at", "2022-01-08 23:58:53.518981"], ["updated_at", "2022-01-08 23:58:53.518981"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-11-01"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mTransaction Create (0.2ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed", "timestamp") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["payer", "DANNON"], ["points", 300], ["created_at", "2022-01-08 23:58:53.520714"], ["updated_at", "2022-01-08 23:58:53.520714"], ["user_id", "1"], ["redeemed", 0], ["timestamp", "2020-10-31"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+Started GET "/users/1/transactions" for ::1 at 2022-01-08 16:01:19 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (2.4ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ?[0m  [["user_id", "1"]]
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (23.7ms)
+Completed 200 OK in 87ms (Views: 50.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/1/spends?spend[points]=5000" for ::1 at 2022-01-08 16:08:27 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/1/spends"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/1/spends?spend[points]=5000" for ::1 at 2022-01-08 16:08:51 -0800
+Processing by SpendsController#create as */*
+  Parameters: {"spend"=>{"points"=>"5000"}, "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/spends_controller.rb:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:6
+  [1m[36mSpend Create (0.3ms)[0m  [1m[32mINSERT INTO "spends" ("points", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["points", 5000], ["user_id", 1], ["created_at", "2022-01-09 00:08:51.789413"], ["updated_at", "2022-01-09 00:08:51.789413"]]
+  ↳ app/controllers/spends_controller.rb:6
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:6
+  [1m[36mTransaction Load (1.7ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ? AND "transactions"."redeemed" = ? ORDER BY "transactions"."timestamp" ASC[0m  [["user_id", "1"], ["redeemed", 0]]
+  ↳ app/controllers/spends_controller.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mTransaction Update (0.3ms)[0m  [1m[33mUPDATE "transactions" SET "redeemed" = ?, "updated_at" = ? WHERE "transactions"."id" = ?[0m  [["redeemed", 1], ["updated_at", "2022-01-09 00:08:51.799154"], ["id", 2]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mTransaction Update (0.2ms)[0m  [1m[33mUPDATE "transactions" SET "redeemed" = ?, "updated_at" = ? WHERE "transactions"."id" = ?[0m  [["redeemed", 1], ["updated_at", "2022-01-09 00:08:51.810820"], ["id", 3]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[36mTransaction Update (0.2ms)[0m  [1m[33mUPDATE "transactions" SET "redeemed" = ?, "updated_at" = ? WHERE "transactions"."id" = ?[0m  [["redeemed", 1], ["updated_at", "2022-01-09 00:08:51.813731"], ["id", 5]]
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:30
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:30
+  [1m[36mTransaction Update (0.3ms)[0m  [1m[33mUPDATE "transactions" SET "remainder" = ?, "updated_at" = ? WHERE "transactions"."id" = ?[0m  [["remainder", 5300], ["updated_at", "2022-01-09 00:08:51.817441"], ["id", 4]]
+  ↳ app/controllers/spends_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mTransaction Create (0.7ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payer", "UNILEVER"], ["points", -200], ["created_at", "2022-01-09 00:08:51.831314"], ["updated_at", "2022-01-09 00:08:51.831314"], ["user_id", "1"], ["redeemed", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mTransaction Create (0.3ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payer", "DANNON"], ["points", -100], ["created_at", "2022-01-09 00:08:51.837087"], ["updated_at", "2022-01-09 00:08:51.837087"], ["user_id", "1"], ["redeemed", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[36mTransaction Create (0.8ms)[0m  [1m[32mINSERT INTO "transactions" ("payer", "points", "created_at", "updated_at", "user_id", "redeemed") VALUES (?, ?, ?, ?, ?, ?)[0m  [["payer", "MILLER COORS"], ["points", -4700], ["created_at", "2022-01-09 00:08:51.839987"], ["updated_at", "2022-01-09 00:08:51.839987"], ["user_id", "1"], ["redeemed", 1]]
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/spends_controller.rb:37
+Completed 200 OK in 69ms (Views: 0.3ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/users/1/transactions" for ::1 at 2022-01-08 16:09:47 -0800
+Processing by TransactionsController#create as */*
+  Parameters: {"user_id"=>"1"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: transaction):
+  
+app/controllers/transactions_controller.rb:18:in `transaction_params'
+app/controllers/transactions_controller.rb:4:in `create'
+Started GET "/users/1/transactions" for ::1 at 2022-01-08 16:09:50 -0800
+Processing by TransactionsController#index as */*
+  Parameters: {"user_id"=>"1"}
+  Rendering transactions/index.json.jbuilder
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ?[0m  [["user_id", "1"]]
+  ↳ app/views/transactions/index.json.jbuilder:1
+  Rendered transactions/index.json.jbuilder (2.6ms)
+Completed 200 OK in 53ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2022-01-08 16:10:43 -0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTransaction Load (0.1ms)[0m  [1m[34mSELECT "transactions".* FROM "transactions" WHERE "transactions"."user_id" = ?[0m  [["user_id", "1"]]
+  ↳ app/controllers/users_controller.rb:22
+  Rendering users/show.json.jbuilder
+  Rendered users/show.json.jbuilder (0.9ms)
+Completed 200 OK in 46ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
